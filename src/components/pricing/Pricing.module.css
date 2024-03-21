@@ -1,0 +1,153 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper {
+    padding: 80px 0;
+}
+
+.wrapper h2 {
+    color: #219653;
+    font-size: 40px;
+}
+
+.cards {
+    display: flex;
+}
+
+.cards .card {
+    width: 25%;
+    border: 1px solid whitesmoke;
+    margin: 1%;
+    border-radius: 5px;
+}
+
+.card .title {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.card .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.card .price {
+    display: flex;
+    margin-bottom: -30px;
+    color: #219653;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card .price .amount {
+    font-size: 40px;
+    margin-top: 10px;
+    color: #219653;
+}
+
+.card .price .month {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.card .price p {
+    color: #ccc;
+}
+
+.card .cfooter {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+.card .cfooter a {
+    background-color: #219653;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.cards .card2 {
+    width: 25%;
+    border: 1px solid whitesmoke;
+    margin: 1%;
+    border-radius: 5px;
+}
+
+.card2 .title {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.card2 .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.card2 .details {
+    margin-top: 50px;
+}
+
+.card2 .price {
+    display: flex;
+    margin-bottom: -30px;
+    color: #219653;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card2 .price .amount {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #219653;
+}
+
+.card2 .price .month {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.card2 .price p {
+    color: #ccc;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}

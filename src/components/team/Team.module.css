@@ -1,0 +1,67 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper {
+    padding: 80px 0;
+}
+
+.wrapper h2 {
+    color: #219653;
+    font-size: 40px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team .member {
+    width: 23%;
+    margin: 1%;
+    box-shadow: 5px 5px 10px 5px #dcdcdc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.team .member h3 {
+    margin: 10px 0;
+}
+
+.team .member .socials {
+    margin: 15px 0;
+}
+
+.team .member img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}

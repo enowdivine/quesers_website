@@ -1,0 +1,111 @@
+.wrapper {
+    background-color: #222736;
+    /* background-color: #202124; */
+    padding: 100px 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.content {
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+.content h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+
+.content h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.brandContent {
+    text-decoration: underline;
+    text-decoration-color: #219653;
+    text-decoration-thickness: 5px;
+}
+
+.brandContent span {
+    color: #219653;
+}
+
+.actionBtns,
+.appBtns {
+    width: 55%;
+    display: flex;
+}
+
+.actionBtns a {
+    padding: 10px 25px;
+    border-radius: 40px;
+    margin-top: 40px;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.actionBtns .started {
+    background-color: #219653;
+    color: white;
+    text-decoration: none;
+}
+
+.actionBtns .community {
+    background-color: #FFC41F;
+    text-decoration: none;
+    color: #000;
+}
+
+.appBtns a {
+    padding: 10px 25px;
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-right: 10px;
+    background-color: #1d1c1f;
+    color: white;
+    text-decoration: none;
+}
+
+.image {
+    width: 35%;
+}
+
+.image img {
+    width: 90%;
+    /* width: 40%; */
+}

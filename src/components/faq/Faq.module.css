@@ -6,6 +6,16 @@
     margin-left: auto;
 }
 
+.wrapper {
+    padding: 80px 0;
+    background-color: whitesmoke;
+}
+
+.wrapper h2 {
+    color: #219653;
+    font-size: 40px;
+}
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;

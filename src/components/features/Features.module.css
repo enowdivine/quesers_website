@@ -1,0 +1,125 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper {
+    padding: 80px 0;
+}
+
+.features {
+    padding: 40px 0;
+}
+
+.features h2 {
+    color: #219653;
+    font-size: 40px;
+}
+
+.features .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features .listItem {
+    background-color: #219653;
+    display: flex;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.features .listDetails {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.cardDiv {
+    background-color: whitesmoke;
+    padding: 40px 0;
+}
+
+.cardDiv .cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardDiv .cards .card {
+    width: 25%;
+    margin: 1%;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.howItWorks {
+    display: flex;
+    padding: 80px 0;
+}
+
+.howItWorks .image {
+    width: 50%;
+}
+
+.howItWorks .image img {
+    width: 80%;
+}
+
+.howItWorks .content {
+    width: 50%;
+}
+
+.howItWorks .content a {
+    color: #219653;
+    text-decoration: none;
+}
+
+.analysis {
+    display: flex;
+    padding: 80px 0;
+}
+
+.analysis .image {
+    width: 50%;
+}
+
+.analysis .image img {
+    width: 60%;
+}
+
+.analysis .content {
+    width: 50%;
+}
+
+.content h2 {
+    color: #219653;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
