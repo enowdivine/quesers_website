@@ -1,11 +1,33 @@
 import React from "react";
 import { useSnapCarousel } from "react-snap-carousel";
+import styles from "./Gallery.module.css";
+
+const images = [
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+  "/images/hero/heroImage.png",
+];
 
 const AdvancedCarousel = () => {
   const { scrollRef, pages, activePageIndex, next, prev, goTo } =
     useSnapCarousel();
   return (
-    <>
+    <div className={styles.gallery}>
       <ul
         ref={scrollRef}
         style={{
@@ -14,31 +36,18 @@ const AdvancedCarousel = () => {
           scrollSnapType: "x mandatory",
         }}
       >
-        {Array.from({ length: 100 }).map((_, i) => (
-          <li
-            style={{
-              backgroundColor: "aqua",
-              fontSize: "50px",
-              width: "250px",
-              height: "250px",
-              flexShrink: 0,
-              color: "#fff",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              marginRight: 5,
-            }}
-          >
-            Item {i}
+        {images.map((img, i) => (
+          <li className={styles.listItem} key={i}>
+            <img src={img} />
           </li>
         ))}
       </ul>
-      <div>
+      {/* <div>
         {activePageIndex + 1} / {pages.length}
-      </div>
-      <button onClick={() => prev()}>Prev</button>
-      <button onClick={() => next()}>Next</button>
-      {/* <ol style={{ display: "flex" }}>
+      </div> */}
+      {/* <button onClick={() => prev()}>Prev</button>
+      <button onClick={() => next()}>Next</button> */}
+      <ol className={styles.navigation}>
         {pages.map((_, i) => (
           <li key={i}>
             <button
@@ -49,8 +58,8 @@ const AdvancedCarousel = () => {
             </button>
           </li>
         ))}
-      </ol> */}
-    </>
+      </ol>
+    </div>
   );
 };
 

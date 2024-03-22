@@ -13,7 +13,8 @@
 
 .wrapper h2 {
     color: #219653;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 @media (min-width: 576px) {

@@ -31,8 +31,9 @@
     color: #219653;
 }
 
-.quesers h2 {
-    /* color: white; */
+.quesers .socials a {
+    color: white;
+    margin: 0 8px;
 }
 
 .contacts {
@@ -41,31 +42,52 @@
 
 .contacts .listItem {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
+.contacts .listItem h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.contacts .listItem .icon {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    margin: -20px 10px 0 0;
+}
+
 .formDiv {
-    width: 30%;
-    border: 1px solid #ccc;
+    width: 35%;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .formDiv input {
     display: block;
-    width: 95%;
+    width: 100%;
     padding: 10px;
     outline: none;
     margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border: 1px solid white;
 }
 
 .formDiv textarea {
-    width: 95%;
+    width: 100%;
     margin-top: 10px;
     padding: 10px;
     outline: none;
-    min-height: 50px;
+    min-height: 100px;
+    max-height: 100px;
+    background-color: transparent;
+    border: 1px solid white;
 }
 
 .formDiv button {
@@ -76,6 +98,30 @@
     border-radius: 2px;
     margin-top: 10px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.formDiv button span {
+    margin-right: 4px;
+}
+
+@media only screen and (max-width: 1094px) {
+    .container {
+        display: block;
+    }
+
+    .quesers {
+        width: 100%;
+    }
+
+    .contacts {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .formDiv {
+        width: 100%;
+    }
 }
 
 @media (min-width: 576px) {

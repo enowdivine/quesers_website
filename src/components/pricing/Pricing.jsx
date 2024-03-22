@@ -8,7 +8,7 @@ const Pricing = () => {
         <h2>CHECK OUR PRICING</h2>
         <div className={styles.cards}>
           <div className={styles.card}>
-            <div className={styles.title}>Free</div>
+            <div className={styles.title}>FREE</div>
             <div className={styles.content}>
               <div>
                 <p className={styles.price}>
@@ -26,7 +26,7 @@ const Pricing = () => {
             </div>
           </div>
           <div className={styles.card}>
-            <div className={styles.title}>Free</div>
+            <div className={styles.title}>FREE</div>
             <div className={styles.content}>
               <div>
                 <p className={styles.price}>
@@ -45,7 +45,7 @@ const Pricing = () => {
           </div>
 
           <div className={styles.card2}>
-            <div className={styles.title}>Paper</div>
+            <div className={styles.title}>PAPER</div>
             <div className={styles.content}>
               <div>
                 <p className={styles.price}>

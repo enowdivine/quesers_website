@@ -1,5 +1,12 @@
 import React from "react";
 import styles from "./Team.module.css";
+import {
+  FaTwitter,
+  FaFacebook,
+  FaInstagramSquare,
+  FaSkype,
+  FaLinkedin,
+} from "react-icons/fa";
 
 const Team = () => {
   return (
@@ -13,7 +20,23 @@ const Team = () => {
             <div className={styles.role}>
               <i>Chief Executive Officer</i>
             </div>
-            <div className={styles.socials}>Socials</div>
+            <div className={styles.socials}>
+              <a href="#">
+                <FaTwitter />
+              </a>
+              <a href="#">
+                <FaFacebook />
+              </a>
+              <a href="#">
+                <FaInstagramSquare />
+              </a>
+              <a href="#">
+                <FaSkype />
+              </a>
+              <a href="#">
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
           <div className={styles.member}>
             <img src="/images/team/ndeh.jpeg" />
@@ -21,7 +44,23 @@ const Team = () => {
             <div className={styles.role}>
               <i>Designer</i>
             </div>
-            <div className={styles.socials}>Socials</div>
+            <div className={styles.socials}>
+              <a href="#">
+                <FaTwitter />
+              </a>
+              <a href="#">
+                <FaFacebook />
+              </a>
+              <a href="#">
+                <FaInstagramSquare />
+              </a>
+              <a href="#">
+                <FaSkype />
+              </a>
+              <a href="#">
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
           <div className={styles.member}>
             <img src="/images/team/agnes.jpeg" />
@@ -29,7 +68,23 @@ const Team = () => {
             <div className={styles.role}>
               <i>Marketer</i>
             </div>
-            <div className={styles.socials}>Socials</div>
+            <div className={styles.socials}>
+              <a href="#">
+                <FaTwitter />
+              </a>
+              <a href="#">
+                <FaFacebook />
+              </a>
+              <a href="#">
+                <FaInstagramSquare />
+              </a>
+              <a href="#">
+                <FaSkype />
+              </a>
+              <a href="#">
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
           <div className={styles.member}>
             <img src="/images/team/lizzy.jpeg" />
@@ -37,7 +92,23 @@ const Team = () => {
             <div className={styles.role}>
               <i>Marketer</i>
             </div>
-            <div className={styles.socials}>Socials</div>
+            <div className={styles.socials}>
+              <a href="#">
+                <FaTwitter />
+              </a>
+              <a href="#">
+                <FaFacebook />
+              </a>
+              <a href="#">
+                <FaInstagramSquare />
+              </a>
+              <a href="#">
+                <FaSkype />
+              </a>
+              <a href="#">
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
           <div className={styles.member}>
             <img src="/images/team/theola.jpeg" />
@@ -45,7 +116,23 @@ const Team = () => {
             <div className={styles.role}>
               <i>Content Writer</i>
             </div>
-            <div className={styles.socials}>Socials</div>
+            <div className={styles.socials}>
+              <a href="#">
+                <FaTwitter />
+              </a>
+              <a href="#">
+                <FaFacebook />
+              </a>
+              <a href="#">
+                <FaInstagramSquare />
+              </a>
+              <a href="#">
+                <FaSkype />
+              </a>
+              <a href="#">
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
         </div>
       </div>

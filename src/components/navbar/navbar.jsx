@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./navbar.module.css";
+import MobileNav from "./mobileNav";
 
 const Navbar = () => {
   return (
@@ -13,25 +14,25 @@ const Navbar = () => {
       <div className={styles.links}>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#">Features</a>
+            <a href="#features">Features</a>
           </li>
           <li>
-            <a href="#">Gallery</a>
+            <a href="#gallery">Gallery</a>
           </li>
           <li>
-            <a href="#">Team</a>
+            <a href="#team">Team</a>
           </li>
           <li>
-            <a href="#">Pricing</a>
+            <a href="#pricing">Pricing</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
           <li>
             <a href="#" className={styles.btn}>
@@ -40,6 +41,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <MobileNav />
     </div>
   );
 };

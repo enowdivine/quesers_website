@@ -1,27 +1,37 @@
-.carousel_container {
-    overflow: hidden;
+.gallery {
+    padding: 40px 0;
 }
 
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carouse_item {
-    flex: 0 0 calc(100% / 7);
-    display: flex;
+.listItem {
+    display: "flex";
+    justify-content: center;
     align-items: center;
+    margin-right: 10px;
+    list-style: none;
+    border: 1px solid #ccc;
+}
+
+.listItem img {
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
     justify-content: center;
 }
 
-.carousel_item img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+.navigation li {
+    list-style: none;
+    margin-right: 5px;
 }
 
-.highlighted {
-    transform: scale(1.2);
+.navigation button {
+    border: none;
+    border-radius: 5%;
+    font-weight: bold;
+    color: #219653;
+    border: 1px solid #219653;
+    background-color: transparent;
 }
-
-/* Adjust the size of the carousel items and highlighted item as needed */

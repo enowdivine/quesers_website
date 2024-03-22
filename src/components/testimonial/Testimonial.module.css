@@ -15,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(33, 150, 83, 0.5);
+    background-color: rgba(33, 150, 83, 0.8);
 }
 
 .container {
@@ -27,10 +27,22 @@
 }
 
 .user {
-    color: red;
+    color: white;
     text-align: center;
     width: 70%;
-    margin: auto;
+    margin: 50px auto;
+}
+
+.user .icon {
+    font-size: 80px;
+}
+
+.user h2 {
+    font-weight: bold;
+}
+
+.user p {
+    font-weight: bold;
 }
 
 @media (min-width: 576px) {

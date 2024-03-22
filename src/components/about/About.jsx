@@ -82,7 +82,7 @@ const About = () => {
       </div>
 
       <div className={styles.videoSection}>
-        <h2>Who We Are</h2>
+        {/* <h2>Who We Are</h2> */}
         <div className={styles.videoDiv}>
           <iframe
             width="100%"

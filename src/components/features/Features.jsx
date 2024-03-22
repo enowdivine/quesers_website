@@ -30,7 +30,7 @@ const Features = () => {
               <div className={styles.listIcon}>
                 <SiSimpleanalytics />
               </div>
-              <div className={styles.listDetails}>S Real Rime Analytics</div>
+              <div className={styles.listDetails}>Real Rime Analytics</div>
             </div>
             <div className={styles.listItem}>
               <div className={styles.listIcon}>
@@ -61,34 +61,35 @@ const Features = () => {
           </div>
         </div>
       </div>
+
       <div className={styles.cardDiv}>
         <div className={styles.container}>
           <div className={styles.cards}>
             <div className={styles.card}>
-              <div>
+              <span className={styles.icon}>
                 <IoMdHappy />
-              </div>
+              </span>
               <h2>232</h2>
               <p>Happy Clients</p>
             </div>
             <div className={styles.card}>
-              <div>
+              <span className={styles.icon}>
                 <BsFiles />
-              </div>
+              </span>
               <h2>521</h2>
               <p>Files</p>
             </div>
             <div className={styles.card}>
-              <div>
+              <span className={styles.icon}>
                 <MdOutlineFileDownload />
-              </div>
+              </span>
               <h2>1463</h2>
               <p>Downloads</p>
             </div>
             <div className={styles.card}>
-              <div>
+              <span className={styles.icon}>
                 <LuUsers />
-              </div>
+              </span>
               <h2>15</h2>
               <p>Providers</p>
             </div>
@@ -113,16 +114,41 @@ const Features = () => {
             </p>
             <div className={styles.list}>
               <p>
-                <FaCheck />
+                <span>
+                  <FaCheck />
+                </span>
                 <a href="#">Download</a> the Quesers app from playstore
               </p>
               <p>
+                <span>
+                  <FaCheck />
+                </span>
                 <a href="#">Download</a> the Quesers app from AppStore
               </p>
-              <p>Launch app and undergo phone number Authentication process</p>
-              <p>Select an initial category for application suggestions</p>
-              <p>If not satisfied by suggestions, search and download paper</p>
-              <p>Read and Enjoy</p>
+              <p>
+                <span>
+                  <FaCheck />
+                </span>{" "}
+                Launch app and undergo phone number Authentication process
+              </p>
+              <p>
+                <span>
+                  <FaCheck />
+                </span>
+                Select an initial category for application suggestions
+              </p>
+              <p>
+                <span>
+                  <FaCheck />
+                </span>
+                If not satisfied by suggestions, search and download paper
+              </p>
+              <p>
+                <span>
+                  <FaCheck />
+                </span>
+                Read and Enjoy
+              </p>
             </div>
             <div>
               <p>
@@ -149,9 +175,24 @@ const Features = () => {
               provider:
             </p>
             <div className={styles.list}>
-              <p>Must be a user of the Quesers application</p>
-              <p>A written composition requesting to a content provider</p>
-              <p>No payment required</p>
+              <p>
+                <span>
+                  <FaCheck />
+                </span>
+                Must be a user of the Quesers application
+              </p>
+              <p>
+                <span>
+                  <FaCheck />
+                </span>
+                A written composition requesting to a content provider
+              </p>
+              <p>
+                <span>
+                  <FaCheck />
+                </span>
+                No payment required
+              </p>
             </div>
           </div>
           <div className={styles.image}>

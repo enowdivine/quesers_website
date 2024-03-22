@@ -12,15 +12,19 @@
 
 .wrapper h2 {
     color: #219653;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cards .card {
-    width: 25%;
+    width: 250px;
     border: 1px solid whitesmoke;
     margin: 1%;
     border-radius: 5px;
@@ -28,6 +32,7 @@
 
 .card .title {
     background-color: whitesmoke;
+    color: #219653;
     text-align: center;
     padding: 15px;
     font-weight: bold;
@@ -42,7 +47,6 @@
 
 .card .price {
     display: flex;
-    margin-bottom: -30px;
     color: #219653;
     font-weight: bold;
     font-size: 25px;
@@ -50,7 +54,7 @@
 
 .card .price .amount {
     font-size: 40px;
-    margin-top: 10px;
+    margin-top: 30px;
     color: #219653;
 }
 
@@ -80,7 +84,7 @@
 }
 
 .cards .card2 {
-    width: 25%;
+    width: 250px;
     border: 1px solid whitesmoke;
     margin: 1%;
     border-radius: 5px;
@@ -88,6 +92,7 @@
 
 .card2 .title {
     background-color: whitesmoke;
+    color: #219653;
     text-align: center;
     padding: 15px;
     font-weight: bold;
@@ -107,7 +112,6 @@
 
 .card2 .price {
     display: flex;
-    margin-bottom: -30px;
     color: #219653;
     font-weight: bold;
     font-size: 25px;
@@ -115,7 +119,7 @@
 
 .card2 .price .amount {
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 30px;
     color: #219653;
 }
 

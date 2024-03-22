@@ -12,31 +12,9 @@
     margin-left: auto;
 
     display: flex;
+    min-height: 600px;
 }
 
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
 
 .content {
     width: 65%;
@@ -48,11 +26,13 @@
     color: white;
     font-size: 50px;
     margin: 0;
+    font-weight: bold;
 }
 
 .content h2 {
     color: white;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 .brandContent {
@@ -67,7 +47,6 @@
 
 .actionBtns,
 .appBtns {
-    width: 55%;
     display: flex;
 }
 
@@ -101,6 +80,11 @@
     text-decoration: none;
 }
 
+.appBtns .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
 .image {
     width: 35%;
 }
@@ -108,4 +92,63 @@
 .image img {
     width: 90%;
     /* width: 40%; */
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (max-width: 1094px) {
+
+    .container {
+        display: block;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .actionBtns,
+    .appBtns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img {
+        width: 50%;
+
+    }
 }

@@ -23,11 +23,15 @@ const Hero = () => {
             </div>
             <div className={styles.appBtns}>
               <a href="#">
-                <FaGooglePlay />
+                <span className={styles.icon}>
+                  <FaGooglePlay />
+                </span>
                 Google Play
               </a>
               <a href="#">
-                <FaApple />
+                <span className={styles.icon}>
+                  <FaApple />
+                </span>
                 App Store
               </a>
             </div>

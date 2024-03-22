@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import { FaSearchLocation } from "react-icons/fa";
+import { FaSearchLocation, FaTelegramPlane } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import {
@@ -27,18 +27,28 @@ const Footer = () => {
               <p>University of Buea</p>
               <p>Cameroon</p>
             </div>
-            <div>
-              <FaTwitter />
-              <FaFacebook />
-              <FaInstagramSquare />
-              <FaSkype />
-              <FaLinkedin />
+            <div className={styles.socials}>
+              <a href="#">
+                <FaTwitter />
+              </a>
+              <a href="#">
+                <FaFacebook />
+              </a>
+              <a href="#">
+                <FaInstagramSquare />
+              </a>
+              <a href="#">
+                <FaSkype />
+              </a>
+              <a href="#">
+                <FaLinkedin />
+              </a>
             </div>
           </div>
         </div>
         <div className={styles.contacts}>
           <div className={styles.listItem}>
-            <div>
+            <div className={styles.icon}>
               <FaSearchLocation />
             </div>
             <div>
@@ -47,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.listItem}>
-            <div>
+            <div className={styles.icon}>
               <MdOutlineEmail />
             </div>
             <div>
@@ -56,7 +66,7 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.listItem}>
-            <div>
+            <div className={styles.icon}>
               <IoPhonePortraitOutline />
             </div>
             <div>
@@ -71,7 +81,12 @@ const Footer = () => {
             <input type="email" placeholder="Your Email" />
             <input type="text" placeholder="Subject" />
             <textarea placeholder="Message"></textarea>
-            <button>Send Message</button>
+            <button>
+              <span>
+                <FaTelegramPlane />
+              </span>
+              Send Message
+            </button>
           </form>
         </div>
       </div>
