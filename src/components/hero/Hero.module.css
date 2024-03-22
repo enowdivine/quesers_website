@@ -12,7 +12,8 @@
     margin-left: auto;
 
     display: flex;
-    min-height: 600px;
+    min-height: 650px;
+    padding-top: 100px;
 }
 
 

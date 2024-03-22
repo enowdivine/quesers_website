@@ -47,7 +47,7 @@ const AdvancedCarousel = () => {
       </div> */}
       {/* <button onClick={() => prev()}>Prev</button>
       <button onClick={() => next()}>Next</button> */}
-      <ol className={styles.navigation}>
+      {/* <ol className={styles.navigation}>
         {pages.map((_, i) => (
           <li key={i}>
             <button
@@ -58,7 +58,7 @@ const AdvancedCarousel = () => {
             </button>
           </li>
         ))}
-      </ol>
+      </ol> */}
     </div>
   );
 };

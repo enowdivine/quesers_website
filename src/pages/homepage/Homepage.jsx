@@ -14,15 +14,29 @@ const Homepage = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <About />
-      <Features />
-      <Gallery />
+      <div id="home">
+        <Hero />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="features">
+        <Features />
+      </div>
+      <div id="gallery">
+        <Gallery />
+      </div>
       <Testimonial />
-      <Team />
-      <Pricing />
+      <div id="team">
+        <Team />
+      </div>
+      <div id="pricing">
+        <Pricing />
+      </div>
       <Faq />
-      <Footer />
+      <div id="contact">
+        <Footer />
+      </div>
     </div>
   );
 };

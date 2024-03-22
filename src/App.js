@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster } from 'react-hot-toast';
 import ErrorPage from './pages/errorpage/errorpage';
 import Homepage from './pages/homepage/Homepage';
+import Register from './pages/register/Register';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           {/* UNPROTECTED ROUTES */}
           <Route path="/" element={<Homepage />} />
+          <Route path="/become-a-vendor" element={<Register />} />
 
           {/* 404 ROUTE */}
           <Route path="*" element={<ErrorPage />} />
