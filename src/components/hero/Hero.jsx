@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
+import { FaGooglePlay, FaApple } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -21,8 +22,14 @@ const Hero = () => {
               </a>
             </div>
             <div className={styles.appBtns}>
-              <a href="#">Google Play</a>
-              <a href="#">App Store</a>
+              <a href="#">
+                <FaGooglePlay />
+                Google Play
+              </a>
+              <a href="#">
+                <FaApple />
+                App Store
+              </a>
             </div>
           </div>
         </div>

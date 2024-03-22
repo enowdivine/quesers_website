@@ -1,6 +1,21 @@
 .wrapper {
     background-color: #333;
     min-height: 400px;
+    /* image */
+    background-image: url("../../../public/images/sddefault.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 83, 0.5);
 }
 
 .container {
@@ -9,6 +24,13 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.user {
+    color: red;
+    text-align: center;
+    width: 70%;
+    margin: auto;
 }
 
 @media (min-width: 576px) {

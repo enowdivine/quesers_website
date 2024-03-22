@@ -1,12 +1,15 @@
 import React from "react";
 import styles from "./About.module.css";
+import { IoIosSearch } from "react-icons/io";
+import { RiDownload2Line } from "react-icons/ri";
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 const About = () => {
   return (
     <div className={styles.container}>
       <div className={styles.solutions}>
         <div className={styles.image}>
-          <img src="/images/hero/heroImage.png" />
+          <img src="/images/about/location.png" />
         </div>
         <div className={styles.content}>
           <h2>Quesers As A Solution</h2>
@@ -18,7 +21,9 @@ const About = () => {
           </p>
           <div className={styles.list}>
             <div className={styles.listItem}>
-              <div className={styles.icon}>Icon</div>
+              <div className={styles.icon}>
+                <IoIosSearch />
+              </div>
               <div className={styles.listContent}>
                 <h3>Locate Questions and Answers</h3>
                 <p>
@@ -29,7 +34,9 @@ const About = () => {
               </div>
             </div>
             <div className={styles.listItem}>
-              <div className={styles.icon}>Icon</div>
+              <div className={styles.icon}>
+                <RiDownload2Line />
+              </div>
               <div className={styles.listContent}>
                 <h3>Download Questions Alongside their Answers</h3>
                 <p>
@@ -39,7 +46,9 @@ const About = () => {
               </div>
             </div>
             <div className={styles.listItem}>
-              <div className={styles.icon}>Icon</div>
+              <div className={styles.icon}>
+                <IoDocumentTextOutline />
+              </div>
               <div className={styles.listContent}>
                 <h3>Read and Enjoy!</h3>
                 <p>Delve into the newly acquired reading material.</p>
@@ -78,7 +87,7 @@ const About = () => {
           <iframe
             width="100%"
             height="300px"
-            src={`https://www.youtube.com/embed/${1}`}
+            src={`https://www.youtube.com/embed/pQ5_sgjvpB8?si=X9pSbVYeP-mfb4Px`}
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

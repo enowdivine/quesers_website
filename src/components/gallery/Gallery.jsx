@@ -1,64 +1,57 @@
-// Gallery.js
+import React from "react";
+import { useSnapCarousel } from "react-snap-carousel";
 
-import React, { useRef } from "react";
-import styles from "./Gallery.module.css";
-
-const Gallery = () => {
-  const galleryRef = useRef(null);
-
+const AdvancedCarousel = () => {
+  const { scrollRef, pages, activePageIndex, next, prev, goTo } =
+    useSnapCarousel();
   return (
-    <div>
-      <div className={styles.container}>
-        <h2>QUESERS APP SAMPLES</h2>
+    <>
+      <ul
+        ref={scrollRef}
+        style={{
+          display: "flex",
+          overflow: "auto",
+          scrollSnapType: "x mandatory",
+        }}
+      >
+        {Array.from({ length: 100 }).map((_, i) => (
+          <li
+            style={{
+              backgroundColor: "aqua",
+              fontSize: "50px",
+              width: "250px",
+              height: "250px",
+              flexShrink: 0,
+              color: "#fff",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginRight: 5,
+            }}
+          >
+            Item {i}
+          </li>
+        ))}
+      </ul>
+      <div>
+        {activePageIndex + 1} / {pages.length}
       </div>
-      <div className={styles["gallery-container"]}>
-        <div className={styles.gallery} ref={galleryRef}>
-          {/* Add your images here */}
-          <img
-            src="/images/about/details-4.png"
-            alt="Image 1"
-            className={styles["gallery-item"]}
-          />
-          <img
-            src="/images/about/details-4.png"
-            alt="Image 2"
-            className={styles["gallery-item"]}
-          />
-          <img
-            src="/images/about/details-4.png"
-            alt="Image 1"
-            className={styles["gallery-item"]}
-          />
-          <img
-            src="/images/about/details-4.png"
-            alt="Image 2"
-            className={styles["gallery-item"]}
-          />
-          <img
-            src="/images/about/details-4.png"
-            alt="Image 1"
-            className={styles["gallery-item"]}
-          />
-          <img
-            src="/images/about/details-4.png"
-            alt="Image 2"
-            className={styles["gallery-item"]}
-          />
-          <img
-            src="/images/about/details-4.png"
-            alt="Image 1"
-            className={styles["gallery-item"]}
-          />
-          <img
-            src="/images/about/details-4.png"
-            alt="Image 2"
-            className={styles["gallery-item"]}
-          />
-          {/* Add more images as needed */}
-        </div>
-      </div>
-    </div>
+      <button onClick={() => prev()}>Prev</button>
+      <button onClick={() => next()}>Next</button>
+      {/* <ol style={{ display: "flex" }}>
+        {pages.map((_, i) => (
+          <li key={i}>
+            <button
+              style={i === activePageIndex ? { opacity: 0.5 } : {}}
+              onClick={() => goTo(i)}
+            >
+              {i + 1}
+            </button>
+          </li>
+        ))}
+      </ol> */}
+    </>
   );
 };
 
-export default Gallery;
+export default AdvancedCarousel;

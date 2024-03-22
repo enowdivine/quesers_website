@@ -1,0 +1,21 @@
+.headerBtn {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: whitesmoke;
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.headerBtn:hover {
+    color: #219653;
+}
+
+.headerBtn span {
+    margin-right: 10px;
+    color: #219653;
+    font-size: 20px;
+    margin-bottom: 3px;
+}

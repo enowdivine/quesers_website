@@ -1,5 +1,15 @@
 import React from "react";
 import styles from "./Features.module.css";
+import { SiSimpleanalytics } from "react-icons/si";
+import { MdAttachMoney, MdOutlineShoppingCart } from "react-icons/md";
+import { FaRegStar } from "react-icons/fa";
+import { FiFlag } from "react-icons/fi";
+import { IoMdSearch } from "react-icons/io";
+import { FaCheck } from "react-icons/fa6";
+import { IoMdHappy } from "react-icons/io";
+import { BsFiles } from "react-icons/bs";
+import { MdOutlineFileDownload } from "react-icons/md";
+import { LuUsers } from "react-icons/lu";
 
 const Features = () => {
   return (
@@ -9,29 +19,41 @@ const Features = () => {
           <h2>CHECK THE FEATURES</h2>
           <div className={styles.list}>
             <div className={styles.listItem}>
-              <div className={styles.listIcon}>Icon</div>
+              <div className={styles.listIcon}>
+                <IoMdSearch />
+              </div>
               <div className={styles.listDetails}>
                 Search Questions & Answers
               </div>
             </div>
             <div className={styles.listItem}>
-              <div className={styles.listIcon}>Icon</div>
+              <div className={styles.listIcon}>
+                <SiSimpleanalytics />
+              </div>
               <div className={styles.listDetails}>S Real Rime Analytics</div>
             </div>
             <div className={styles.listItem}>
-              <div className={styles.listIcon}>Icon</div>
+              <div className={styles.listIcon}>
+                <MdAttachMoney />
+              </div>
               <div className={styles.listDetails}>Earn money</div>
             </div>
             <div className={styles.listItem}>
-              <div className={styles.listIcon}>Icon</div>
+              <div className={styles.listIcon}>
+                <MdOutlineShoppingCart />
+              </div>
               <div className={styles.listDetails}>Buy Authentic Solutions</div>
             </div>
             <div className={styles.listItem}>
-              <div className={styles.listIcon}>Icon</div>
+              <div className={styles.listIcon}>
+                <FaRegStar />
+              </div>
               <div className={styles.listDetails}>Star Content</div>
             </div>
             <div className={styles.listItem}>
-              <div className={styles.listIcon}>Icon</div>
+              <div className={styles.listIcon}>
+                <FiFlag />
+              </div>
               <div className={styles.listDetails}>
                 Flag Inappropriate Content
               </div>
@@ -43,22 +65,30 @@ const Features = () => {
         <div className={styles.container}>
           <div className={styles.cards}>
             <div className={styles.card}>
-              <div>Icon</div>
+              <div>
+                <IoMdHappy />
+              </div>
               <h2>232</h2>
               <p>Happy Clients</p>
             </div>
             <div className={styles.card}>
-              <div>Icon</div>
+              <div>
+                <BsFiles />
+              </div>
               <h2>521</h2>
               <p>Files</p>
             </div>
             <div className={styles.card}>
-              <div>Icon</div>
+              <div>
+                <MdOutlineFileDownload />
+              </div>
               <h2>1463</h2>
               <p>Downloads</p>
             </div>
             <div className={styles.card}>
-              <div>Icon</div>
+              <div>
+                <LuUsers />
+              </div>
               <h2>15</h2>
               <p>Providers</p>
             </div>
@@ -83,6 +113,7 @@ const Features = () => {
             </p>
             <div className={styles.list}>
               <p>
+                <FaCheck />
                 <a href="#">Download</a> the Quesers app from playstore
               </p>
               <p>
