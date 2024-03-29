@@ -74,6 +74,7 @@
 
 .card .icon {
     width: 25%;
+    height: 35%;
     margin: auto;
     background-color: #219653;
     padding: 15px;
@@ -142,6 +143,17 @@
 .content h2 {
     color: #219653;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .cardDiv .cards .card {
+        width: 100%;
+    }
+
+    .card .icon {
+        width: 20%;
+        height: 45%;
+    }
 }
 
 @media only screen and (max-width: 1094px) {
