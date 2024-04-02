@@ -10,8 +10,55 @@ import {
   FaSkype,
   FaLinkedin,
 } from "react-icons/fa";
+import toast from "react-hot-toast";
+import { useDispatch } from "react-redux";
+import { sendEmail } from "../../store/reducers/app";
+import { useState } from "react";
 
 const Footer = () => {
+  const dispatch = useDispatch();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const sendMessage = async (e) => {
+    e.preventDefault();
+    try {
+      if (name && email && subject && message) {
+        const data = {
+          name,
+          email,
+          subject,
+          message,
+        };
+        setLoading(true);
+        await dispatch(sendEmail(data)).then((res) => {
+          if (res.meta.requestStatus === "rejected") {
+            toast.error(res.payload);
+            setLoading(false);
+            return;
+          } else {
+            toast.success(res.payload.message);
+            setLoading(false);
+            setName("");
+            setEmail("");
+            setSubject("");
+            setMessage("");
+            return;
+          }
+        });
+      } else {
+        toast.error("All field are required");
+        setLoading(false);
+      }
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+    }
+  };
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -77,15 +124,34 @@ const Footer = () => {
         </div>
         <div className={styles.formDiv}>
           <form>
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="Message"></textarea>
-            <button>
+            <input
+              type="text"
+              placeholder="Your Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+            />
+            <textarea
+              placeholder="Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+            <button onClick={sendMessage}>
               <span>
                 <FaTelegramPlane />
               </span>
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>

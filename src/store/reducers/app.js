@@ -22,6 +22,23 @@ export const register = createAsyncThunk("app/register", async (data, thunkAPI) 
     }
 })
 
+export const sendEmail = createAsyncThunk("app/sendEmail", async (data, thunkAPI) => {
+    try {
+        const response = await axios.post(`${url}/mails/send-email`, data, {
+            headers: {
+                "Content-Type": "application/json"
+            },
+        })
+        return response.data
+    } catch (error) {
+        const message =
+            (error.message && error.response.data && error.response.data.message) ||
+            error.message ||
+            error.toString()
+        return thunkAPI.rejectWithValue(message)
+    }
+})
+
 export const appSlice = createSlice({
     name: "app",
     initialState,

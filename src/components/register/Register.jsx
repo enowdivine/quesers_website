@@ -18,8 +18,6 @@ const Register = () => {
   const [resume, setresume] = useState(null);
   const [password, setpassword] = useState("");
 
-  console.log(resume);
-
   const vendorRegistration = async (e) => {
     e.preventDefault();
     try {
@@ -41,7 +39,6 @@ const Register = () => {
           resume: resume,
           password,
         };
-        console.log(data);
         setLoading(true);
         await dispatch(register(data)).then((res) => {
           if (res.meta.requestStatus === "rejected") {
