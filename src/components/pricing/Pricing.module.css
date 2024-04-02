@@ -132,6 +132,14 @@
     color: #ccc;
 }
 
+@media (max-width: 600px) {
+
+    .cards .card,
+    .cards .card2 {
+        width: 100%
+    }
+}
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
