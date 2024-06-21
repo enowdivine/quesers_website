@@ -2,26 +2,7 @@ import React from "react";
 import { useSnapCarousel } from "react-snap-carousel";
 import styles from "./Gallery.module.css";
 
-const images = [
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-  "/images/hero/heroImage.png",
-];
+const images = ["/images/hero/heroImage.png", "/images/hero/heroImage.png"];
 
 const AdvancedCarousel = () => {
   const { scrollRef, pages, activePageIndex, next, prev, goTo } =
